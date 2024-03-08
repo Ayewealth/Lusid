@@ -138,6 +138,11 @@ nav {
 }
 
 .logo a {
+  display: flex;
+  align-items: center;
+
+  font-size: 18px;
+  font-weight: 600;
   width: 100%;
 }
 .logo a img {

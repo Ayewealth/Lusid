@@ -75,3 +75,12 @@ const swiper2 = new Swiper(".testimonial-list", {
   spaceBetween: 30,
   slidesPerView: 2,
 });
+const swiper3 = new Swiper(".bannerimgs", {
+  direction: "horizontal",
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+  spaceBetween: 30,
+  slidesPerView: 1,
+});

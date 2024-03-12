@@ -73,7 +73,7 @@ a {
 
 .button--white {
   background-color: #fff;
-  color: var(--first-color);
+  color: #dc3545;
 }
 
 .button--white:hover {
@@ -92,12 +92,12 @@ a {
 .button--link {
   padding: 0;
   background-color: transparent;
-  color: var(--first-color);
+  color: #dc3545;
 }
 
 .button--link:hover {
   background-color: transparent;
-  color: var(--first-color);
+  color: #dc3545;
 }
 
 /*========== SCROLL BAR ==========*/
@@ -153,24 +153,24 @@ nav {
   font-size: 17px;
 }
 
-.logo {
-  display: flex;
-  justify-content: center;
-}
 .logo a {
   display: flex;
+  flex-direction: row;
   align-items: center;
-
   font-size: 15px;
   font-weight: 600;
-  width: 100%;
   color: #000;
 }
 .logo a img {
   width: 15%;
 }
+.logo-name {
+  font-size: 19px;
+  color: #36599d;
+}
 
 .navlinks {
+  flex: 1;
   display: flex;
   align-items: center;
   gap: 1.5rem;
@@ -226,9 +226,12 @@ nav.nav ul li a:hover::after {
   position: relative;
   min-height: 98vh;
   display: flex;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+}
+.bannerimgs {
+  width: 600px;
+  height: 100%;
 }
 .banner__container {
   display: flex;
@@ -279,8 +282,9 @@ nav.nav ul li a:hover::after {
   width: 100%;
 }
 .banner__img img {
-  max-width: 100%;
-  height: auto;
+  width: 600px;
+  height: 500px;
+  border-radius: 10px;
 }
 
 /* ================================== AboutUs ================================= */
@@ -374,6 +378,27 @@ nav.nav ul li a:hover::after {
   margin: 0 10px 0 0;
 }
 
+.trusted-by {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  margin-top: 4rem;
+}
+.trusted-by h3 {
+  font-size: 19px;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: #dc3545;
+}
+.companies {
+  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.companies img {
+  width: 150px;
+}
 /* ======================================= Ourservice ====================================== */
 .ourservices {
   position: relative;
@@ -588,7 +613,11 @@ nav.nav ul li a:hover::after {
   font-weight: 500;
 }
 
-/* ======================================= Ourservice ====================================== */
+/* ======================================= Chefs ====================================== */
+/* .chefs {
+  width: 100%;
+  height: 100%;
+} */
 .ourchefs__container {
   position: relative;
   display: flex;
@@ -835,10 +864,6 @@ nav.nav ul li a:hover::after {
 .testimonial__inner-comment {
   margin-top: 0;
   margin-bottom: 1rem;
-}
-.swiper {
-  width: 100%;
-  height: 100%;
 }
 
 /*==================== CONTACT ME ====================*/

@@ -1,3 +1,6 @@
+.logo-name {
+  color: #36599d;
+}
 .about__banner {
   background: #fff8f6;
   padding: 180px 30px 80px;
@@ -14,6 +17,7 @@
   top: 0;
   left: 0;
   right: 0;
+  bottom: 0;
 }
 
 .about__banner-inner {
@@ -45,6 +49,10 @@
 }
 .about__banner-inner ul li a {
   color: #212529;
+  transition: 0.3s;
+}
+.about__banner-inner ul li a:hover {
+  color: #cd3131;
 }
 .about__banner-inner ul li:last-child::before {
   content: "";
@@ -58,3 +66,46 @@
   bottom: 0;
   margin: auto;
 }
+.about-focus {
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+
+  margin-top: 5rem;
+}
+.about-focus div {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem 2rem;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: 0.3s;
+  cursor: pointer;
+  background-color: #cd3131;
+  color: #fff;
+  height: 250px;
+  border-radius: 10px;
+}
+.about-focus div:hover {
+  transform: translateY(-5px);
+  transition: ease-in 0.3s;
+}
+.about-focus div i {
+  font-size: 28px;
+}
+.about-focus div svg {
+  height: 50px;
+  width: 50px;
+  fill: #fff;
+}
+.about-focus div h2 {
+  font-weight: 500;
+}
+.about-focus div p {
+  font-size: 14px;
+  font-weight: 500;
+}
+/* .about-focus div:hover {
+  background-color: #cd3131;
+  color: #fff;
+} */

@@ -47,23 +47,27 @@ const swiper1 = new Swiper(".chefs", {
   spaceBetween: 30,
   slidesPerView: 4,
 
-  // breakpoints: {
-  //   // when window width is >= 320px
-  //   320: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 20,
-  //   },
-  //   // when window width is >= 480px
-  //   480: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 30,
-  //   },
-  //   // when window width is >= 640px
-  //   640: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 40,
-  //   },
-  // },
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 40,
+    },
+    1044: {
+      slidesPerView: 4,
+      spaceBetween: 40,
+    },
+  },
 });
 
 const swiper2 = new Swiper(".testimonial-list", {
@@ -74,7 +78,30 @@ const swiper2 = new Swiper(".testimonial-list", {
   },
   spaceBetween: 30,
   slidesPerView: 2,
+
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    640: {
+      slidesPerView: 1,
+      spaceBetween: 30,
+    },
+    // when window width is >= 640px
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 40,
+    },
+  },
 });
+
 const swiper3 = new Swiper(".bannerimgs", {
   direction: "horizontal",
   loop: true,
